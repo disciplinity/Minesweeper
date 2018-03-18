@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Minesweeper</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="minesweeper.js"></script>
+</head>
+
+<body>
+	<div class="gameblock" id="mainscreen">
+		<a class="cgiHighscores" href="scoretable.html" onclick="readMessages()">Highscores</a>
+
+		<div class="header">
+
+			<label>Minesweeper</label>
+							
+		</div>
+		<br>
+		<button type="button" onclick="saveMinefield()">Save</button>
+		<button type="button">Load</button>
+		
+		<div class="options">
+			<br>
+			<label>Name:</label> <input id="namesInput" type="text" name="nameInput"> <br><br>
+			<label>Bombs:</label> 
+			<input id="bombsInput" type="number" name="bombs">
+			<select id="fieldSizeInput">
+				<option value="6">6x6</option>
+				<option value="9">9x9</option>
+				<option value="16">16x16</option>
+			</select>
+			<button type="button" onclick="startGame()">Start</button>
+			<p id="validationStatus" style="font-weight: bold"></p>
+		</div>
+		
+		<div id="mineField">
+		</div>
+		
+		<table id="highscores">
+			<tr>
+				<th>Game ID</th>
+				<th>Status</th>
+				<th>Mines</th>
+
+			</tr>
+		</table>
+		
+	</div>
+</body>
+</html>

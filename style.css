@@ -1,0 +1,133 @@
+html {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	background-color: #e0e2e5;
+}
+
+
+.gameblock {
+	width: 50%;
+	text-align: center;
+	background-color: #737477;
+	margin: auto;
+	min-width: 380px;
+	border: 1px solid black;
+	padding-bottom: 10px;
+}
+
+.header {
+	background-color: #444649;
+	font-size: 40px;
+	padding: 7px;
+	color: #e1e7f2;
+	font-weight: bold;
+	border: 2px solid white;
+}
+
+
+.options {
+	width: 50%;
+	margin: auto;
+}
+
+.options label {
+	color: #dee8f9;
+	font-weight: bold;
+}
+
+#mineField {
+	text-align: center;
+	line-height: 0;
+	margin-bottom: 10px;
+}
+
+.notClickedTile {
+	background: white;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #9c9e9a;
+	display: inline-block;
+}
+
+
+.notClickedTile:hover {
+	background: lightblue;
+}
+
+.notClickable {
+}
+
+
+.hidden {
+	visibility: hidden;
+}
+
+.revealed {
+	visibility: visible;
+}
+
+table, td, th{
+	margin: auto;
+	border: 2px solid white;
+	border-collapse: collapse;
+	
+}
+
+th {
+	padding: 7px;
+	background-color: #4c4b44;
+	border: 3px ridge #d6c446;
+
+}
+
+tr {
+	color: white;
+}
+
+tr:hover {
+	background-color: #b7b5a8;
+}
+
+.gameIdClass {
+	color: white;
+}
+
+.loseStatus {
+	color: #ef9e8f;
+	font-weight: bold;
+}
+
+.winStatus {
+	color: #b0ef99;
+	font-weight: bold;
+}
+
+.cgiHighscores {
+	color: white;
+    text-decoration: underline;
+    border: none;
+	background: #737477;
+}
+
+.cgiHighscores:hover {
+	color: lightgreen;
+}
+
+.fieldTile {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+
+.tileValue {
+	width: 10px;
+	height: 10px;
+	margin: 0px;
+	padding: 0px;
+	font-weight: bold;
+}
+
+#mineField button.description {
+    pointer-events: none;
+}
+
+

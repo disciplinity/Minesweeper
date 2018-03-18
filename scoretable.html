@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Minesweeper</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="minesweeper.js"></script>
+</head>
+
+<body>
+	<div class="gameblock" id="mainscreen">
+		<a class="cgiHighscores" href="index.html">Game</a>
+
+		<div class="header">
+
+			<label>Minesweeper</label>
+							
+		</div>
+		<br>
+		<label style="color: #eddd36"><b>Player:</b></label> <input id="findPlayerId" type="text" name="findPlayer">
+		<button type="button" onclick="findMatches()">Find</button>
+		<br>
+		<br>
+		<table id="highscoretable">
+			<tr>
+				<th>Name</th>
+				<th>Bombs planted</th>
+				<th>Game result</th>
+				<th>Moves made</th>
+				<th>Board size</th>
+			</tr>
+		</table>
+
+	</div>
+
+</body>
+</html>
